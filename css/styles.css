@@ -1,34 +1,69 @@
-*{ box-sizing:border-box; 
-   margin:0;
-   padding:0;        
-   font-size: 20px;   
-   font-family: Arial, sans-serif; }
-   
-h1{font-weight: 600;
-   margin: 10px; }
-
-.navbar {
-   background-color: #a6a6a6;  
-   padding: 20px;	
+body{      
+   font-size: 16px;   
+   font-family: Arial, sans-serif; 
+   padding: 0px;
+   margin: 0px;
+}       
+ 
+.navbar {   
+   background-color: #a6a6a6; 	
    border:  1px solid black; 
-   border-radius: 10px;  
-   }
+   border-radius: 0;  
+   clear: left;
+   padding-bottom: 0%;
+} 
+ul {
+	marging-top: 10px;
+	list-style-type: none;	
+}
 
-.navbar-brand {
+li {
+  color:#a6a6a6;  
+  width: 100%;
+  display: none;
+} 
+   
+ .navbar-brand {    
+   font-size: 2.0em; 	 
    color:black;
    font-weight: bold;
-   font-family: Arial, sans-serif;
-   font-size: 2.2em; }	
+}
 
-.menuDesc{   
-    background-color: #a6a6a6;     
-	padding: 10px;	
-    margin:   5px;	
-	border: 2px solid black; }
 
-.menuDesc span{font-size: 1.6em;
+h1{
+   text-align:center;	  
+   font-weight: bold;
+   margin: 15px;
+} 
+
+.menuDesc{
+    background-color: #a6a6a6;	
+	margin: 10px 25px;
+	padding: 0px;
+	border: 2px solid black;	
+} 
+	
+span{
+	font-size: 1.5em;
     line-height:0.5;
+	padding:20px;
     font-weight: 550;	
-	padding: 25px 25px;
 	text-align: center;
-	display: block;  }
+	display: block; 
+} 
+
+/********** Extra small devices only **********/
+@media (max-width: 991px) {
+	li {
+	  border: 1px solid black;     
+	  border-radius: 0px;   
+	  background-color: white; 
+	  color:black;  
+	  font-weight: bold;
+	  display: block;
+	} 
+	
+    .menuDesc{
+	   margin: 10px 15%;	
+	}
+}
